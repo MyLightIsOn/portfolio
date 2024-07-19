@@ -3,6 +3,13 @@
   max-width: 700px;
 }
 
+.mobile-highlights {
+  display: none;
+}
+.desktop-highlights {
+  display: block;
+}
+
 /* Large Devices, Wide Screens :1200px
 ====================================*/
 @media (min-width: 1200px) and (max-width: 1500px) {
@@ -195,8 +202,15 @@
 /* Small Mobile :320px.
 ====================================*/
 @media (max-width: 767px) {
+  .mobile-highlights {
+    display: block;
+  }
+  .desktop-highlights {
+    display: none;
+  }
+
   .container {
-    width: 300px;
+    width: 100%;
   }
   .mobi-mb-30 {
     margin-bottom: 30px;

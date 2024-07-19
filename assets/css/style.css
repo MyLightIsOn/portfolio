@@ -28,7 +28,7 @@ body {
   font-size: 14px;
   line-height: 22px;
   font-weight: 400;
-  color: #939393;
+  color: #767676;
   background-color: #ffffff;
   overflow-x: hidden;
   -webkit-text-size-adjust: 100%;
@@ -202,6 +202,10 @@ h6 {
   color: #5b5b5b;
   font-weight: 200;
   border: 1px solid #737373;
+}
+
+.key-outcomes h4 {
+  margin-bottom: 20px;
 }
 
 .key-outcomes ul {
@@ -1972,7 +1976,7 @@ hr.devider {
 .style-3 .project-title p,
 .style-2 .project-title p,
 .style-1 .project-title p {
-  color: #939393;
+  color: #767676;
   line-height: 1;
   text-transform: capitalize;
 }
@@ -2364,7 +2368,7 @@ hr.devider {
   font-weight: 400;
 }
 .blog-text p {
-  color: #818181;
+  color: #737373;
 }
 .blog-text a.read-more {
   border-bottom: 1px solid #5b5b5b;
@@ -2434,7 +2438,7 @@ hr.devider {
 
 .widget .tags a,
 .widget .category li a {
-  color: #818181;
+  color: #737373;
 }
 .widget .posts li a,
 .widget .category li a {
@@ -2479,6 +2483,22 @@ hr.devider {
 
 /* Blog Details
 --------------- */
+.case-study-image {
+  border:1px solid #000
+}
+
+.blog-details a {
+  color: #000;
+}
+
+.blog-details a:hover {
+  text-decoration: underline;
+}
+
+figure {
+  text-align: center;
+  margin-bottom: 20px;
+}
 .blog-details .blog-text h3 {
   font-size: 26px;
 }
@@ -2495,6 +2515,11 @@ hr.devider {
   line-height: 30px;
   margin: 0;
   padding: 40px 0;
+}
+.blog-details span {
+  font-weight: normal;
+  font-style: italic;
+  font-size: 14px;
 }
 .blog-details .tag > strong,
 .blog-details .tag > a {
@@ -2841,7 +2866,7 @@ hr.devider {
   font-size: 26px;
 }
 .project-details > p {
-  color: #818181;
+  color: #737373;
   line-height: 28px;
 }
 .project-info {
@@ -2853,7 +2878,7 @@ hr.devider {
   margin-bottom: 2px;
 }
 .project-info p {
-  color: #818181;
+  color: #737373;
   font-size: 15px;
   font-weight: 300;
 }
