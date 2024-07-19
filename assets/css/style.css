@@ -1280,6 +1280,7 @@ hr.devider {
 .header-style-1 .logo,
 .header-style-1 .mainmenu li a {
   line-height: 110px;
+  white-space: nowrap;
 }
 .portfolio-menu.hover-1 li:after,
 .menu-hover-1 li a:after {
@@ -1304,6 +1305,11 @@ hr.devider {
 .menu-hover-1 li:hover a:after,
 .mainmenu.menu-hover-1 li a.active::after {
   width: 100%;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
 }
 
 /* Dropdown Menu */
@@ -1592,7 +1598,6 @@ hr.devider {
   .navbar-toggle {
     position: absolute;
     right: 35px;
-    top: -45px;
   }
   .header-top .navbar-collapse {
     background: #fff none repeat scroll 0 0;
