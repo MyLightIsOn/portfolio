@@ -7,3 +7,6 @@
 out
 gen
 old
+
+*.DS_Store
+/node_modules/
