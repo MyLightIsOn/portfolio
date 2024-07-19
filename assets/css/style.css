@@ -1294,7 +1294,6 @@ hr.devider {
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
   width: 0;
-  margin-left: -10px;
   z-index: -1;
 }
 .menu-hover-1 li ul a:after {
@@ -1304,7 +1303,7 @@ hr.devider {
 .portfolio-menu.hover-1 li:hover:after,
 .menu-hover-1 li:hover a:after,
 .mainmenu.menu-hover-1 li a.active::after {
-  width: 36px;
+  width: 100%;
 }
 
 /* Dropdown Menu */
@@ -1324,7 +1323,7 @@ hr.devider {
 }
 .mainmenu .navigation > li > ul {
   left: 0px;
-  top: 100%;
+  top: 65%;
 }
 .mainmenu .navigation > li:hover > ul {
   opacity: 1;

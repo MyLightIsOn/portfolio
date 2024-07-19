@@ -89,6 +89,10 @@
 /* Tablet desktop :768px
 ===================================*/
 @media (min-width: 768px) and (max-width: 991px) {
+  .menu-hover-1 ul li a::after {
+    display: none !important;
+  }
+
   .pb-205,
   .pt-140 {
     padding-top: 100px;
