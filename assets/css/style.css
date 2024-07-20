@@ -244,8 +244,28 @@ h6 {
 }
 
 .bold {
-  font-weight: bold;
+  font-weight: bold !important;
   color: #5b5b5b;
+}
+
+.detail-table th:first-of-type{
+  width: 30%;
+}
+
+.detail-table th {
+  background: #727272;
+  color: #fff;
+}
+
+.detail-table td, .detail-table th {
+  padding: 10px;
+  border: 1px solid #000;
+}
+
+.detail-table tr td:first-of-type {
+  background: #f4f4f4;
+  text-align: center;
+  color: #707070;
 }
 
 /* Screen Support */
@@ -1597,7 +1617,7 @@ hr.devider {
   }
   .navbar-toggle {
     position: absolute;
-    right: 35px;
+    right: 0;
   }
   .header-top .navbar-collapse {
     background: #fff none repeat scroll 0 0;

@@ -53,12 +53,12 @@
     window.location.href.lastIndexOf("/") + 1,
   );
   var aActive = $("ul li a");
-  if (aActive.length) {
+  /*if (aActive.length) {
     aActive.each(function () {
       if ($(this).attr("href") === pgurl || $(this).attr("href") === "")
         $(this).addClass("active");
     });
-  }
+  }*/
 
   /*
      ISOTOPE MENU
