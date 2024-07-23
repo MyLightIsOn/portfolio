@@ -248,21 +248,25 @@ h6 {
   color: #5b5b5b;
 }
 
+.detail-table, .heuristics-table {
+  margin-bottom: 20px;
+}
+
 .detail-table th:first-of-type{
   width: 30%;
 }
 
-.detail-table th {
+.detail-table th,  .heuristics-table th {
   background: #727272;
   color: #fff;
 }
 
-.detail-table td, .detail-table th {
+.detail-table td, .detail-table th,  .heuristics-table th, .heuristics-table td {
   padding: 10px;
   border: 1px solid #000;
 }
 
-.detail-table tr td:first-of-type {
+.detail-table tr td:first-of-type,  .heuristics-table tr td:first-of-type {
   background: #f4f4f4;
   text-align: center;
   color: #707070;
