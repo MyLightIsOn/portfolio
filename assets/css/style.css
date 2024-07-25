@@ -176,6 +176,12 @@ h6 {
   padding: 20px;
 }
 
+.code {
+  font-family: monospace, sans-serif;
+  font-style: normal !important;
+  color: rebeccapurple;
+}
+
 .poppins {
   font-family: "Poppins", sans-serif;
 }
