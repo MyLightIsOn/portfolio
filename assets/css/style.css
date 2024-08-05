@@ -1331,9 +1331,9 @@ hr.devider {
 .portfolio-menu.hover-1 li:after,
 .menu-hover-1 li a:after {
   background: #a08578 none repeat scroll 0 0;
-  top: 55px;
+  top: 62px;
   content: "";
-  height: 8px;
+  height: 3px;
   left: 0;
   right: 0;
   position: absolute;
