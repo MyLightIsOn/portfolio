@@ -216,6 +216,15 @@ h6 {
   font-weight: 200;
   border: 1px solid #737373;
 }
+.case-study-list-image {
+  width: 370px;
+  display: block;
+  border: 1px solid #737373;
+}
+
+.case-study-list-image img {
+  object-fit: cover;
+}
 
 .key-outcomes {
   background: #f4f4f4;
@@ -223,6 +232,10 @@ h6 {
   color: #5b5b5b;
   font-weight: 200;
   border: 1px solid #737373;
+}
+
+.min-h-full {
+  height: 100vh;
 }
 
 .key-outcomes h4 {
