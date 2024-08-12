@@ -99,6 +99,7 @@ a:focus {
   outline: 2px dashed black;
   outline-offset: 10px;
   text-decoration: none;
+  display: inline-block;
 }
 /* Transition
 =============== */
@@ -226,12 +227,23 @@ h6 {
   object-fit: cover;
 }
 
+.case-study-3-image {
+  background: #fe8374;
+}
+
 .key-outcomes {
   background: #f4f4f4;
   padding: 1.5em;
   color: #5b5b5b;
   font-weight: 200;
   border: 1px solid #737373;
+}
+
+.in-progress {
+  font-size: 30px !important;
+  font-weight: bold;
+  text-align: center;
+  margin: 100px 0 !important;
 }
 
 .min-h-full {
@@ -2455,9 +2467,9 @@ hr.devider {
 .blog-text a.read-more:hover {
   color: #a08578;
 }
-.style1 .blog-text {
+/*.style1 .blog-text {
   overflow: hidden;
-}
+}*/
 
 /* Sidebar */
 .widget .search form {
