@@ -85,7 +85,7 @@
 	VENOBOX ACTIVE
 	================================ */
   var venBOx = $(".venobox");
-  //venBOx.venobox();
+  venBOx.venobox();
 
   /*
      SLICK CAROUSEL AS NAV
