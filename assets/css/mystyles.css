@@ -1,0 +1,16 @@
+.design-image-container {
+    margin-bottom: 50px;
+    max-height: 500px;
+}
+
+.design-image-container img {
+    object-fit: cover;
+    border: 1px solid #000
+}
+
+.mobile-design {
+}
+
+.mobile-row {
+    display: flex;
+}

@@ -170,6 +170,10 @@ h6 {
 [ 3. Global Classes ]
 ====================================== */
 
+.single-portfolio a img {
+  max-height: 500px;
+}
+
 .last-link {
   display: block;
   margin: 40px auto 20px;
