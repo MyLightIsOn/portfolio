@@ -1,6 +1,7 @@
 .design-image-container {
     margin-bottom: 50px;
     max-height: 500px;
+    box-sizing: border-box;
 }
 
 .design-image-container img {
