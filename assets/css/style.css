@@ -314,6 +314,7 @@ h6 {
   font-weight: bold;
   text-align: center;
   font-size: 18px;
+  color: #000;
 }
 
 .detail-table th:first-of-type{
@@ -2458,9 +2459,10 @@ hr.devider {
   font-family: "Poppins", sans-serif;
   font-weight: 500;
 }
-.blog-text h6 {
-  color: #9a9a9a;
+.blog-text h4 {
+  color: #000;
   font-weight: 400;
+  font-size: 13px;
 }
 .blog-text p {
   color: #737373;
@@ -2967,7 +2969,7 @@ figure {
 .project-info {
   width: 325px;
 }
-.project-info h5 {
+.project-info span {
   color: #4c4c4c;
   font-weight: 500;
   margin-bottom: 2px;
