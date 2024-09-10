@@ -2478,6 +2478,22 @@ hr.devider {
   padding-bottom: 3px;
   text-transform: uppercase;
 }
+.blog-text a.dev-button {
+  color: #fff;
+  display: inline-block;
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  background: #5b5b5b;
+  padding: 10px 16px;
+  width: 100px;
+  text-align: center;
+}
+.blog-text a.dev-button:hover {
+  background: #a08578;
+}
 .blog-text a.read-more:hover {
   border-color: #a08578;
 }
