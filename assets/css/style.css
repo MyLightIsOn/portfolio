@@ -2460,9 +2460,9 @@ hr.devider {
   font-weight: 500;
 }
 .blog-text h4 {
-  color: #000;
-  font-weight: 400;
-  font-size: 13px;
+  color: #5b5b5b;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
 }
 .blog-text p {
   color: #737373;
@@ -2612,7 +2612,7 @@ figure {
   text-align: center;
   margin-bottom: 20px;
 }
-.blog-details .blog-text h3 {
+.blog-details .blog-text h3, .blog-details .blog-text h4  {
   font-size: 26px;
 }
 .blog-details .blog-text p {
