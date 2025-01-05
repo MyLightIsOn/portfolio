@@ -1,8 +1,3 @@
-/* My Custom Styles */
-.homepage-subtext {
-  max-width: 700px;
-}
-
 .mobile-highlights {
   display: none;
 }
@@ -346,4 +341,9 @@
   .portfolio-area.style4 .project-title h3 {
     font-size: 20px;
   }
+}
+
+/* My Custom Styles */
+.homepage-subtext {
+  max-width: 700px;
 }
