@@ -15,3 +15,9 @@
 .mobile-row {
     display: flex;
 }
+
+.blog-list {
+    padding-left: 20px;
+    font-size: 16px;
+    line-height: 30px;
+}
