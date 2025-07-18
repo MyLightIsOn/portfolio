@@ -120,10 +120,29 @@
                           <span class="font-style-normal">Project Manager</span>
                         </h5>
                       </li>
-                      <li><span>AI System Design</span> - Content here</li>
-                      <li><span>UX Design</span> - Content here.</li>
-                      <li><span>Systenm Architecture</span> - Content Here.</li>
-                      <li><span>Development</span> - Content Here</li>
+                      <li>
+                        <span>AI Integration</span> – Designed a multi-agent LLM
+                        system to automate issue enrichment, report generation,
+                        user impact summaries, and VPAT documentation.
+                      </li>
+                      <li>
+                        <span>Accessibility Expertise</span> – Built with WCAG
+                        compliance in mind, including automated classification
+                        and accessible UI design to ensure inclusivity at every
+                        level.
+                      </li>
+                      <li>
+                        <span>End-to-End Architecture</span> – Developed a
+                        modern stack using Next.js, FastAPI, PostgreSQL, and
+                        GraphQL, with cloud image storage and asynchronous AI
+                        processing.
+                      </li>
+                      <li>
+                        <span>Product Thinking</span> – Identified a personal
+                        pain point and turned it into a scalable solution others
+                        can use, balancing usability, performance, and future
+                        growth.
+                      </li>
                     </ul>
                   </div>
                 </div>
@@ -132,40 +151,39 @@
               <div class="blog-text plr-50 mb-70">
                 <h3>Background:</h3>
                 <p>
-                  This is a project I have been wanting to make for myself for a
-                  long time. As a UX engineer in previous roles, logging
-                  accessibility issues is a pain. I wanted to make a tool that
-                  would help me log accessibility issues and then have a system
-                  that would automatically generate a report for me.
+                  As a UX engineer, I often found the process of logging
+                  accessibility issues to be time-consuming and inefficient.
+                  I’ve long wanted to create a tool that would streamline this
+                  workflow and simplify issue reporting and automatically
+                  generate clear, useful reports.
                 </p>
 
-                <h4>Problem:</h4>
-
+                <h4>Problem</h4>
                 <p>
-                  Logging accessibility issues is usually a manual process.
-                  There are many tools that can help, but they are not always
-                  easy to use. Spreadsheets, the most common tool, but they are
-                  tedious, especially when you have a lot of issues.
+                  Accessibility issues are typically logged manually, often
+                  using spreadsheets. While tools exist to assist, many are
+                  unintuitive or cumbersome, especially when dealing with large
+                  volumes of issues.
                 </p>
-
                 <p>
-                  Furthermore, non-technical people don't often know what to
-                  make of the long lists and details, so further explanation is
-                  required.
+                  Additionally, accessibility reports can be overwhelming for
+                  non-technical stakeholders. They often require extra
+                  explanation to be actionable, which creates communication
+                  friction and slows down remediation.
                 </p>
-
                 <p>
-                  Here is a discussion on Reddit that talks more about these
-                  issues:
+                  This
                   <a
                     href="https://www.reddit.com/r/accessibility/comments/1ezp445/logging_accessibility_issues/"
-                    >Logging accessibility issues</a
+                    >Reddit discussion on logging accessibility issues</a
                   >
+                  highlights many of these shared frustrations within the
+                  accessibility community.
                 </p>
 
                 <blockquote>
                   " I’m just looking to see what was the best way to present
-                  them (a11y issues). I have been using Excel so far but I’m
+                  them [a11y issues]. I have been using Excel so far but I’m
                   searching for something a little bit more polished. " <br />
                   <span>alekeuwu - Reddit User</span>
                 </blockquote>
@@ -174,35 +192,21 @@
                 <h4>Agentic System Design:</h4>
 
                 <p>
-                  At my current role, I have been using a makeshift system of AI
-                  to log issues and generate reports. I was doing this manually
-                  just using a few different instances in ChatGPT. It occured to
-                  me that others might want to use this as well so I began to
-                  workout the experience of how that would be in a unified UI.
+                  In my current role, I had been using a makeshift system
+                  powered by AI to log issues and generate reports. Initially,
+                  this was done manually using multiple ChatGPT sessions. As I
+                  refined this workflow, it became clear that others could
+                  benefit from a more unified experience, so I began designing
+                  an integrated UI around it.
                 </p>
-
                 <p>
-                  Based on how I was using AIs already, I decided to go with a
-                  agentic system similar to the
+                  Drawing from my own usage patterns, I adopted an agent-based
+                  architecture inspired by
                   <a
                     href="https://www.anthropic.com/engineering/building-effective-agents"
                     target="_blank"
-                    >Parallelization</a
-                  >
-                  workflow coined by Anthropic.
-                </p>
-
-                <p>
-                  I chose a candidate with strong leadership skills and a solid
-                  background in user research, essential for supporting the
-                  company’s unique and disruptive approach to the jewelry
-                  industry.
-                </p>
-
-                <p>
-                  We planned to bring on three more designers after the
-                  discovery phase. For now, our focus was on developing a
-                  research strategy tailored to this specific use case.
+                    >Anthropic's Parallelization workflow</a
+                  >.
                 </p>
 
                 <a
@@ -222,61 +226,62 @@
                   </figure>
                 </a>
 
-                <p>In my case, there will be 4 Agents:</p>
-
+                <p>
+                  My system is built around four AI agents, each with a specific
+                  role:
+                </p>
                 <ul class="blog-list">
                   <li>
-                    <b>LLM 1</b> - for taking users issue descriptions and
-                    providing more detail, suggesting fixes, and assigning
+                    <b>LLM 1</b> – Enhances user-submitted issue descriptions by
+                    adding detail, suggesting code-level fixes, and mapping
+                    issues to relevant
                     <a href="https://www.w3.org/TR/WCAG22/" target="_blank"
                       >WCAG standards</a
                     >.
                   </li>
                   <li>
-                    <b>LLM 2</b> - will be used to generate reports. This will
-                    include a summary of the issues, a list of fixes, and a
-                    detailed report.
+                    <b>LLM 2</b> – Generates comprehensive reports, including
+                    issue summaries, recommended fixes, and formatted
+                    documentation.
                   </li>
                   <li>
-                    <b>LLM 3</b> - will summarize the impact on disabled users.
-                    This would be extremely helpful to designers to help them
-                    learn user experience as it applies to people with
-                    disabilities.
+                    <b>LLM 3</b> – Assesses the impact of issues on users with
+                    disabilities, providing valuable insights for designers to
+                    improve inclusive UX.
                   </li>
                   <li>
-                    <b>LLM 4</b> - would be the final LLM (The Aggregator) that
-                    would create VPATs from all of this information. VPATs are
-                    extrememlly expensive (can be $10000+) and time consuming,
-                    often taking weeks to months to complete. This would cut
-                    down the time and money spent on VPATs considerably.
+                    <b>LLM 4</b> – Acts as the Aggregator, compiling outputs
+                    from the other agents to generate VPATs. These documents are
+                    typically expensive and time-consuming to produce. This
+                    system drastically reduces both cost and turnaround time.
                   </li>
                 </ul>
 
                 <br /><br />
 
-                <h4>Object Design:</h4>
+                <h4>Model Design:</h4>
 
                 <p>
-                  The object structure of this application would all users to
-                  categorize issues at a few levels.
+                  The application's data model enables users to categorize and
+                  manage accessibility issues across multiple levels of context.
                 </p>
-
                 <ul class="blog-list">
                   <li>
-                    <b>Issues</b> - This is the base element that everything is
-                    built on top of. Users create issues logging individual
-                    accessibiity problems.
+                    <b>Issues</b> – The foundational element of the system.
+                    Users log individual accessibility problems, which serve as
+                    the core data for reports and analysis.
                   </li>
                   <li>
-                    <b>Assessments</b> - Assessments are used to group issues
-                    together. For example, if you have a large website, you may
-                    want to break it down in parts like signup or transactions.
-                    Reports can be generated from this level.
+                    <b>Assessments</b> – Assessments group related issues
+                    together. For instance, a large website might have separate
+                    assessments for different flows like signup or checkout.
+                    Reports can be generated at this level.
                   </li>
                   <li>
-                    <b>Projects</b> - Projects are used to group assessments.
-                    You might have many assessments for one Project. Reports can
-                    be generated at this level as well.
+                    <b>Projects</b> – Projects serve as containers for multiple
+                    assessments. This makes it easier to track accessibility
+                    efforts across an entire product or client. Reports can also
+                    be generated at the project level.
                   </li>
                 </ul>
 
@@ -292,7 +297,7 @@
                       alt="Parallelization"
                     />
                     <figcaption class="case-study-caption">
-                      Object Diagram
+                      Model Diagram
                     </figcaption>
                   </figure>
                 </a>
@@ -302,10 +307,11 @@
                 <h4>UI Design:</h4>
 
                 <p>
-                  The UI for this application has to be very, very simple. Think
-                  JIRA, but even more stripped down. The idea being that anyone
-                  (Technical and non-technical) should be able to use this to
-                  log issues they find.
+                  The user interface for this application was designed to be as
+                  simple and intuitive as possible. Think of it as a highly
+                  stripped-down version of JIRA that can be used effortlessly by
+                  both technical and non-technical users to log accessibility
+                  issues.
                 </p>
 
                 <br /><br />
@@ -338,10 +344,10 @@
                     <img
                       class="case-study-image"
                       src="assets/img/a11y-bug-logger/wireframe-2.webp"
-                      alt="Issue List Wireframe"
+                      alt="Issue Detail Wireframe"
                     />
                     <figcaption class="case-study-caption">
-                      Issue List Wireframe (View Full Image)
+                      Issue Detail Wireframe (View Full Image)
                     </figcaption>
                   </figure>
                 </a>
@@ -355,10 +361,10 @@
                     <img
                       class="case-study-image"
                       src="assets/img/a11y-bug-logger/wireframe-3.webp"
-                      alt="Issue List Wireframe"
+                      alt="Assessment Detail Wireframe"
                     />
                     <figcaption class="case-study-caption">
-                      Issue List Wireframe (View Full Image)
+                      Assessment Detail Wireframe (View Full Image)
                     </figcaption>
                   </figure>
                 </a>
@@ -366,17 +372,16 @@
                 <br /><br /><br /><br />
 
                 <p>
-                  When creating the hifidelty designs, it was important to make
-                  sure that the UI was itself, accessible. Large bold fonts,
-                  very clear focus/hover states, and high contrast colors were
-                  all used to ensure that the UI was accessible to users with
-                  visual disablities.
+                  During the high-fidelity design phase, accessibility of the UI
+                  itself was a top priority. Large, bold fonts, clear focus and
+                  hover states, and high-contrast color palettes were employed
+                  to ensure usability for individuals with visual impairments.
                 </p>
                 <p>
-                  Special attention was also paid to keyboard interactivity. As
-                  mentioned before, logging issues can be tedious so every extra
-                  comfort that could be given to the users was consider in this
-                  design.
+                  Keyboard navigation was also a key focus. Logging issues can
+                  be tedious, so every possible comfort and efficiency
+                  improvement was considered to make the experience more fluid
+                  and accessible.
                 </p>
 
                 <a
@@ -388,10 +393,10 @@
                     <img
                       class="case-study-image"
                       src="assets/img/a11y-bug-logger/design-1.webp"
-                      alt="Issue List Wireframe"
+                      alt="Issue UI Design"
                     />
                     <figcaption class="case-study-caption">
-                      Issue List Wireframe (View Full Image)
+                      Issue UI Design (View Full Image)
                     </figcaption>
                   </figure>
                 </a>
@@ -405,10 +410,10 @@
                     <img
                       class="case-study-image"
                       src="assets/img/a11y-bug-logger/design-2.webp"
-                      alt="Issue List Wireframe"
+                      alt="Issue Detail Design"
                     />
                     <figcaption class="case-study-caption">
-                      Issue List Wireframe (View Full Image)
+                      Issue Detail Design (View Full Image)
                     </figcaption>
                   </figure>
                 </a>
@@ -422,10 +427,10 @@
                     <img
                       class="case-study-image"
                       src="assets/img/a11y-bug-logger/design-3.webp"
-                      alt="Issue List Wireframe"
+                      alt="Assessment Detail Design - Dark Mode"
                     />
                     <figcaption class="case-study-caption">
-                      Issue List Wireframe (View Full Image)
+                      Assessment Detail Design - Dark Mode (View Full Image)
                     </figcaption>
                   </figure>
                 </a>
@@ -435,9 +440,9 @@
                 <h4>Technical:</h4>
 
                 <p>
-                  The stack I went with was NextJS, TailwindCSS for the frontend
-                  and FastAPI and PostgreSQL for the backend. The NextJS server
-                  would uses GraphQL to communicate with the backend.
+                  The technology stack includes Next.js and Tailwind CSS for the
+                  frontend, with FastAPI and PostgreSQL powering the backend.
+                  The frontend communicates with the backend via GraphQL.
                 </p>
 
                 <a
@@ -458,31 +463,32 @@
                 </a>
 
                 <p>
-                  The Issue Enrichment LLM would be done using NextJS as there
-                  is not much computation needed and there's no need to send
-                  information through the whole pipeline. Also, issue images
-                  would be stored in Cloudinary with the URLs for those images
-                  being stored in the database. This would all be handled by
-                  NextJS.
+                  The initial issue enrichment, handled by an LLM, is
+                  implemented within the Next.js application. This task is
+                  relatively lightweight and doesn't require routing through the
+                  entire backend pipeline. Additionally, issue images are stored
+                  on Cloudinary, with image URLs saved to the database, all
+                  managed directly from the frontend.
                 </p>
 
                 <p>
-                  The remaining Agents would be used via a FastAPI server since
-                  these will be happening asychronosly behind the scenes and
-                  require much more computation. When the user views the
-                  reports/summaries for assessments, the infomration would have
-                  already been enriched and ready for them to read.
+                  The remaining AI agents operate on the FastAPI server, running
+                  asynchronously in the background. These processes are more
+                  resource-intensive and prepare enriched content ahead of time.
+                  By the time users access reports or summaries, the data has
+                  already been processed and is ready to review.
                 </p>
 
                 <br /><br />
                 <h4>Conclusion:</h4>
 
                 <p>
-                  The first part of this application is built. Users can log in
-                  and log issues using the Issue Enrichent AI. I plan to put up
-                  a live demo with credentials soon. User testing is next before
-                  I continue because ensuring that logging fast, efficient, and
-                  accurate is the core of this application.
+                  The core functionality of the application is live. Users can
+                  sign in and log issues using the AI-powered enrichment system.
+                  A public demo with credentials will be available soon. The
+                  next focus is user testing to ensure the issue-logging
+                  experience is fast, efficient, and accurate as it is the
+                  foundation of this tool.
                 </p>
               </div>
             </div>
@@ -498,33 +504,30 @@
                   <li>
                     <h5>
                       Role:
-                      <span class="font-style-normal">Project Manager</span>
+                      <span class="font-style-normal"
+                        >Full Stack Developer & UX Engineer</span
+                      >
                     </h5>
                   </li>
                   <li>
-                    <span>Leadership</span> - Assembled team of designers to
-                    work with a international startup with rapidly evolving
-                    requirements.
+                    <span>AI Integration</span> – Designed a multi-agent LLM
+                    system to automate issue enrichment, report generation, user
+                    impact summaries, and VPAT documentation.
                   </li>
                   <li>
-                    <span>Strategic Thinking</span> - Guided the project from
-                    ideation to completion while prioritizing costs, time to
-                    market, and future roadmaps.
+                    <span>Accessibility Expertise</span> – Built with WCAG
+                    compliance in mind, including automated classification and
+                    accessible UI design to ensure inclusivity at every level.
                   </li>
                   <li>
-                    <span>User Centered Design</span> - Started the project with
-                    a primary focus on UX which made all subsequent decisions
-                    easier to manage.
+                    <span>End-to-End Architecture</span> – Developed a modern
+                    stack using Next.js, FastAPI, PostgreSQL, and GraphQL, with
+                    cloud image storage and asynchronous AI processing.
                   </li>
                   <li>
-                    <span>Communication</span> - Team was dispersed
-                    geographically with two designers in India, one in Malaysia,
-                    and myself and the client in the US and Hong Kong.
-                  </li>
-                  <li>
-                    <span> Project Management</span> - Was given a small budget,
-                    tight timeline, and a large scope, yet we still created a
-                    great design on schedule.
+                    <span>Product Thinking</span> – Identified a personal pain
+                    point and turned it into a scalable solution others can use,
+                    balancing usability, performance, and future growth.
                   </li>
                 </ul>
               </div>
