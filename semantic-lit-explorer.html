@@ -1,0 +1,299 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Semantic Literature Explorer - RAG Research Tool" />
+    <meta name="keywords" content="RAG, vector database, semantic search, LLM, research tool" />
+    <meta name="author" content="Lawrence Moore" />
+
+    <title>Semantic Literature Explorer - RAG Research Tool</title>
+
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="assets/js/vendor/modernizr-2.8.3.min.js"></script>
+    <script defer src="https://umami-analytics-gamma-gray.vercel.app/script.js" data-website-id="4ca1066f-69be-42ff-874a-ffb795298f91"></script>
+</head>
+
+<body>
+<div id="loading-wrap">
+    <div class="loading-effect"></div>
+</div>
+
+<header class="header-style-1 white-bg">
+    <div class="header-top active-sticky">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-6 col-sm-6">
+                    <div class="left">
+                        <div class="logo">
+                            <a href="index.html">Lawrence Moore UX+</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="header-space"></div>
+
+<div class="breadcrumbs-title white-bg pt-90 pb-80">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="breadcrumbs-menu">
+                    <h2>Semantic Literature Explorer - RAG Research Tool</h2>
+                    <ul class="clearfix">
+                        <li>Case Study</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="blog-area blog-details white-bg pt-40 pb-120 clearfix">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-8 col-md-9 mobi-mb-50">
+                <div class="blog-post clearfix pr-20">
+                    <div class="thumb mb-60">
+                        <figure>
+                            <img class="case-study-image" src="assets/img/semantic-lit-explorer/hero-image.webp" alt="Semantic Literature Explorer interface" />
+                            <figcaption class="case-study-caption">
+                                Semantic Literature Explorer interface showing semantic search capabilities
+                            </figcaption>
+                        </figure>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-4 col-md-3 mobile-highlights">
+                        <div class="sidebar white-bg">
+                            <div class="widget mb-45">
+                                <ul class="case-study-highlights">
+                                    <li><h4 class="text-center">Case Study Highlights:</h4></li>
+                                    <li><h5>Role: <span class="font-style-normal">Research Engineer & System Architect</span></h5></li>
+                                    <li><span>Research-Driven Development</span> – Designed a practical research instrument to empirically explore RAG and vector database architectures.</li>
+                                    <li><span>Semantic Retrieval</span> – Implemented section-aware chunking and metadata-rich embeddings for meaning-based literature exploration.</li>
+                                    <li><span>Academic Rigor</span> – Built a controlled corpus of 20-100 research papers to study LLM system architectures systematically.</li>
+                                    <li><span>Learning Through Building</span> – Gained hands-on experience with vector databases, embedding models, and RAG failure modes.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="blog-text plr-50 mb-70">
+                        <h3>Background:</h3>
+                        <p>Academic research often involves exploring large bodies of literature to understand emerging concepts, identify patterns, and synthesize insights. Traditional keyword search falls short when trying to explore ideas by their meaning rather than exact terminology. This becomes especially problematic in fast-moving fields like AI systems design, where different papers may use varying terminology for similar concepts.</p>
+
+                        <p>The Semantic Literature Explorer addresses this challenge by building a vector-database-backed research instrument that enables semantic exploration of academic literature. Rather than being a production tool, it serves as a practical learning project to understand how RAG systems actually behave when implemented.</p>
+
+                        <h4>The Problem</h4>
+                        <p>Conducting research into LLM system architectures presents several interconnected challenges:</p>
+                        <ul class="blog-list">
+                            <li><b>Keyword Search Limitations</b> – Traditional search requires exact terminology matches, missing conceptually related content that uses different vocabulary.</li>
+                            <li><b>Scattered Knowledge</b> – Key insights about orchestration, RAG patterns, and agent architectures are distributed across dozens of papers using inconsistent terminology.</li>
+                            <li><b>Theory-Practice Gap</b> – Many academic papers discuss RAG and vector databases theoretically, but few researchers have hands-on experience building these systems.</li>
+                            <li><b>Evaluation Challenges</b> – Without a working system, it's difficult to empirically test claims about semantic retrieval, chunking strategies, or orchestration patterns.</li>
+                        </ul>
+
+                        <br /><br />
+
+                        <h4>Core Research Question</h4>
+                        <p>The project centers on a fundamental question: How do modern AI system architectures like RAG, orchestration, and agent systems actually behave in practice when instantiated as real systems?</p>
+
+                        <p>This question drives the entire architecture. Rather than building a polished product, the goal is to create a research instrument that provides empirical grounding for theoretical claims about LLM systems.</p>
+
+                        <br /><br />
+
+                        <h4>System Architecture</h4>
+                        <p>The architecture deliberately mirrors production LLM systems discussed in the literature, creating a seven-phase pipeline from PDF extraction to semantic synthesis:</p>
+
+                        <a class="venobox" data-gall="gall-img" href="assets/img/semantic-lit-explorer/architecture-diagram.webp">
+                            <figure>
+                                <img class="case-study-image" src="assets/img/semantic-lit-explorer/architecture-diagram.webp" alt="Seven-phase pipeline architecture" />
+                                <figcaption class="case-study-caption">Seven-phase pipeline from PDFs to semantic synthesis</figcaption>
+                            </figure>
+                        </a>
+
+                        <br /><br />
+
+                        <h5 class="blog-subsection">Phase 1: Corpus Definition</h5>
+                        <p>The foundation is a carefully curated dataset of 20-100 research papers focused on LLM architectures, RAG, multi-agent systems, orchestration, and governance. This controlled corpus enables systematic study while remaining manageable for a research project.</p>
+
+                        <p>Papers are selected based on relevance to specific research questions, including both academic and industry sources. Each paper is clearly labeled with metadata including venue, publication year, and paper type, enabling temporal analysis and source filtering.</p>
+
+                        <br />
+
+                        <h5 class="blog-subsection">Phase 2: Text Extraction</h5>
+                        <p>Clean text extraction from academic PDFs requires careful handling of headers, footers, figures, and complex layouts. The extraction process preserves section structure and page-level organization, creating a foundation for semantic chunking.</p>
+
+                        <br />
+
+                        <h5 class="blog-subsection">Phase 3: Section-Aware Chunking</h5>
+                        <p>Unlike naive chunking that splits text arbitrarily, section-aware chunking respects the semantic structure of academic papers. Chunks are 200-300 words with approximately 20% overlap, with boundaries aligned to section headings where possible.</p>
+
+                        <p>Each chunk carries rich metadata including paper title, authors, year, venue, section name, and paper type. This metadata enables filtering by source type, temporal analysis, and attribution in synthesized responses.</p>
+
+                        <br />
+
+                        <h5 class="blog-subsection">Phase 4: Embedding</h5>
+                        <p>Semantic search requires encoding text into high-dimensional vectors that capture meaning. The project uses sentence-transformer models to generate one embedding per chunk, creating semantic representations that enable similarity search by concept rather than keywords.</p>
+
+                        <br />
+
+                        <h5 class="blog-subsection">Phase 5: Vector Database</h5>
+                        <p>A local vector database stores embedding vectors alongside raw text and metadata payloads. This queryable semantic index enables fast similarity search while maintaining the flexibility to filter by metadata like publication year or paper type.</p>
+
+                        <br />
+
+                        <h5 class="blog-subsection">Phase 6: Semantic Retrieval</h5>
+                        <p>The retrieval system supports diverse query types tailored to academic research, including definition queries, comparison queries, trend analysis, and limitations or critiques. Queries are embedded using the same model, enabling top-k similarity search with optional metadata filtering.</p>
+
+                        <br />
+
+                        <h5 class="blog-subsection">Phase 7: LLM Synthesis</h5>
+                        <p>Retrieved chunks are passed to an LLM with strict grounding constraints: answers must use only the retrieved context with no external knowledge. This ensures responses are traceable to specific papers and prevents hallucination of claims not present in the corpus.</p>
+
+                        <br /><br />
+
+                        <h4>Research Questions</h4>
+                        <p>The system is designed to support investigation into seven core research areas, each with representative queries that test different aspects of semantic retrieval:</p>
+
+                        <table class="detail-table">
+                            <thead>
+                            <tr>
+                                <th>Research Area</th>
+                                <th>Example Query</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>Conceptual Definitions</td>
+                                <td>How is "orchestration" defined across different papers?</td>
+                            </tr>
+                            <tr>
+                                <td>Architectural Patterns</td>
+                                <td>What patterns emerge for multi-agent coordination?</td>
+                            </tr>
+                            <tr>
+                                <td>Vector DB & Retrieval</td>
+                                <td>How do papers justify using semantic retrieval?</td>
+                            </tr>
+                            <tr>
+                                <td>Orchestration & Control</td>
+                                <td>What strategies manage control flow in LLM systems?</td>
+                            </tr>
+                            <tr>
+                                <td>Evaluation & Failures</td>
+                                <td>What failure modes are discussed for RAG systems?</td>
+                            </tr>
+                            <tr>
+                                <td>Governance & Ethics</td>
+                                <td>How are compliance requirements integrated?</td>
+                            </tr>
+                            <tr>
+                                <td>Temporal Analysis</td>
+                                <td>How has framing of agent systems evolved 2022-2024?</td>
+                            </tr>
+                            </tbody>
+                        </table>
+
+                        <br /><br />
+
+                        <h4>Evaluation Strategy</h4>
+                        <p>Unlike production systems optimized for metrics, this project treats evaluation as a research method. The approach combines qualitative assessment with deliberate stress testing to understand system behavior.</p>
+
+                        <h5 class="blog-subsection">Qualitative Evaluation</h5>
+                        <p>Manual review focuses on conceptual relevance: Are retrieved chunks actually addressing the semantic intent of the query? Does section-aware chunking produce more coherent results than arbitrary splitting? Where does semantic retrieval fail to capture meaning?</p>
+
+                        <h5 class="blog-subsection">Architectural Stress Tests</h5>
+                        <p>The system is deliberately tested under challenging conditions to expose failure modes. This includes varying chunk sizes, changing top-k retrieval counts, introducing contradictory papers to the corpus, and asking intentionally ambiguous questions.</p>
+
+                        <p>Crucially, failures are treated as research insights rather than bugs. Understanding where and why semantic retrieval breaks down provides empirical grounding for architectural decisions.</p>
+
+                        <br /><br />
+
+                        <h4>Technical Implementation</h4>
+                        <p>The project is built with Next.js and TypeScript, leveraging modern web technologies to create an interactive research interface. The technology choices prioritize learning and experimentation over production optimization.</p>
+
+                        <p>Key technical decisions include selecting a local vector database for easy experimentation, choosing sentence-transformer models for embedding, and implementing metadata-rich chunking to enable flexible filtering and attribution.</p>
+
+                        <a class="venobox" data-gall="gall-img" href="assets/img/semantic-lit-explorer/technical-architecture.webp">
+                            <figure>
+                                <img class="case-study-image" src="assets/img/semantic-lit-explorer/technical-architecture.webp" alt="Technical architecture and component structure" />
+                                <figcaption class="case-study-caption">System components and integration points</figcaption>
+                            </figure>
+                        </a>
+
+                        <br /><br />
+
+                        <h4>Key Learnings</h4>
+                        <p>Building this system has already revealed important insights about RAG architectures, even before completion:</p>
+
+                        <ul class="blog-list">
+                            <li><b>Chunking Strategy Matters</b> – Section-aware chunking that respects document structure produces more semantically coherent results than naive splitting.</li>
+                            <li><b>Metadata is Essential</b> – Rich metadata enables filtering, attribution, and temporal analysis that pure semantic search cannot provide.</li>
+                            <li><b>Context vs Retrieval Trade-offs</b> – There's a fundamental tension between retrieving enough context for the LLM to synthesize and keeping context windows manageable.</li>
+                            <li><b>Empirical Beats Theoretical</b> – Actually building the system reveals failure modes and design constraints that aren't obvious from reading about RAG architectures.</li>
+                        </ul>
+
+                        <br />
+
+                        <h4>Research Methodology Benefits</h4>
+                        <p>This project strengthens academic research by providing concrete artifacts to reference, enabling claims based on empirical observation rather than speculation, and grounding theoretical discussions in implementation reality.</p>
+
+                        <p>By using a RAG system as a research instrument to study RAG systems, the project creates a unique feedback loop where the tool itself becomes a source of insights about its own architecture.</p>
+
+                        <br /><br />
+
+                        <h4>Conclusion</h4>
+                        <p>The Semantic Literature Explorer demonstrates how building practical systems can deepen understanding of AI architectures. By deliberately treating failures as insights and evaluation as a research method, the project goes beyond creating a functional tool to generate knowledge about semantic retrieval, chunking strategies, and RAG system design.</p>
+
+                        <p>This approach of learning through building provides hands-on experience with vector databases, exposes real RAG failure modes, and creates empirical grounding for academic claims about LLM system architectures. The result is both a useful research instrument and a methodology for exploring complex AI systems through implementation.</p>
+
+                        <p>The project is open source and available on <a href="https://github.com/MyLightIsOn/semantic-lit-explorer" target="_blank">GitHub</a>, serving as both a research tool and an educational resource for others interested in RAG systems.</p>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-4 col-md-3 desktop-highlights">
+                <div class="sidebar white-bg">
+                    <div class="widget mb-45">
+                        <ul class="case-study-highlights">
+                            <li><h4 class="text-center">Case Study Highlights:</h4></li>
+                            <li><h5>Role: <span class="font-style-normal">Research Engineer & System Architect</span></h5></li>
+                            <li><span>Research-Driven Development</span> – Designed a practical research instrument to empirically explore RAG and vector database architectures.</li>
+                            <li><span>Semantic Retrieval</span> – Implemented section-aware chunking and metadata-rich embeddings for meaning-based literature exploration.</li>
+                            <li><span>Academic Rigor</span> – Built a controlled corpus of 20-100 research papers to study LLM system architectures systematically.</li>
+                            <li><span>Learning Through Building</span> – Gained hands-on experience with vector databases, embedding models, and RAG failure modes.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <div class="copyright black-bg ptb-15">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 text-center">
+                    <div class="text">
+                        <p>&copy; 2025 Lawrence Moore</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="assets/js/vendor/jquery-1.12.4.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/plugins.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
